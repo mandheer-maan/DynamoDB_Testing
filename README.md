@@ -58,19 +58,15 @@ src/main/java/com/example/index.html
 mvn clean package
 ```
 
-### Login to AWS Console Management
+### Login to AWS Console Management and do the follwing steps 
 
 ```
-pip3 install -t Serverless_Project_Using_Selenium_Python/seleniumLayer/selenium/python/lib/python3.6/site-packages selenium==2.37
+1. Create a new Lambda function by selecting Java 8 on Amazon Linux 1 as runtime environment and Execution role as (Create a new role with basic Lambda permissions)
+2. Create a new S3 Bucket and upload the jar file created in the target folder
+3. Then, upload the jar file from s3 location into the Lambda function
+4. Change the handler path as per requirement as in this case the path is com.example.HelloWorldHandler::handleRequest
+5. Test the Lambda function by passing Event JSON as input parameters to the Lambda function
 ```
-
-### Provide the name for Selenium layer and Lambda function 
-(Replace ```PROJECT_NAME``` with user-defined name) 
-```
-sed -i 's/project1/PROJECT_NAME/g' Serverless_Project_Using_Selenium_Python/seleniumLayer/serverless.yaml
-sed -i 's/project1/PROJECT_NAME/g' Serverless_Project_Using_Selenium_Python/lambda/serverless.yaml
-```
-
 ### Configure AWS profile
 ```
 aws configure set aws_access_key_id "AWS_ID";
