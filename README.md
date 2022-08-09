@@ -67,13 +67,9 @@ mvn clean package
 4. Change the handler path as per requirement as in this case the path is com.example.HelloWorldHandler::handleRequest
 5. Test the Lambda function by passing Event JSON as input parameters to the Lambda function
 ```
-### Configure AWS profile
+### Create an API Gateway with following steps 
 ```
-aws configure set aws_access_key_id "AWS_ID";
-aws configure set aws_secret_access_key "AWS_ACCESS_KEY";
-aws configure set region "us-east-1";
-aws configure set output "json";
-aws configure set aws_profile "PROFILE_ID";
+1. 
 ```
 
 ### Prepare chrome related drivers (in .zip file)
