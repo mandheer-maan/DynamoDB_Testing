@@ -81,29 +81,15 @@ mvn clean package
 4. Associate the Lambda function created before and save it
 5. Then, Under Actions drop-down click on Enable CORS and replace the existing values
 6. Deploy the API under API Actions from Actions drop-down, choose deployment stage i.e [New Stage] and name the Stage name like in my case i.e dev, then click on        Deploy
-7. Copy the Invoke URL and use it in the index.html page 
+7. Copy the Invoke URL and use it in the index.html page
 ```
 
-### Prepare chrome related drivers (in .zip file)
+### Uploading files to S3 Bucket
 ```
-cd Serverless_Project_Using_Selenium_Python;
-chmod +x install.sh;
-./install.sh
+1. Go to the bucket created earlier and upload index.html file into it
+2. Then, make the file public using ACL by selecting it under the Actions drop-down.
+3. Copy the Object URL under properties tab and then test it as in my case it is --> 
 ```
-
-### Deploy Selenium Layers
-```
-cd seleniumLayer;
-serverless deploy 
-```
-
-
-### Deploy Lambda Function
-```
-cd ../lambda;
-serverless deploy 
-```
-
 ### Start Testing
    - Go to **/lambda** directory  
 
