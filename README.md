@@ -39,6 +39,12 @@ src/main/java/com/example/index.html
         <artifactId>aws-lambda-java-events</artifactId>
         <version>3.11.0</version>
     </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.4</version>
+        <scope>test</scope>
+    </dependency
 </dependencies>
 <dependencyManagement>
     <dependencies>
