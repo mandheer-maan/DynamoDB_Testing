@@ -75,7 +75,13 @@ mvn clean package
 ```
 ### Create an API Gateway with following steps 
 ```
-1. 
+1. Create a new API by clicking on Create API button and then click omn Build button under REST API
+2. Name the API and select the Edge optimized from Endpoint Type drop-down and click Create API
+3. Under Actions drop-down select Create Method and choose POST method and tick it.
+4. Associate the Lambda function created before and save it
+5. Then, Under Actions drop-down click on Enable CORS and replace the existing values
+6. Deploy the API under API Actions from Actions drop-down, choose deployment stage i.e [New Stage] and name the Stage name like in my case i.e dev, then click on        Deploy
+7. Copy the Invoke URL and use it in the index.html page 
 ```
 
 ### Prepare chrome related drivers (in .zip file)
