@@ -1,6 +1,6 @@
 # DynamoDB_Testing
 
-### First create a new java maven project in any IDE or VS Code image and name the project as **DynamoDB_Testing**
+### First create a new java maven project in any IDE or VS Code Editor and name the project as **DynamoDB_Testing**
 
 ### Create a new java file as provided in this project
 ```
