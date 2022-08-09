@@ -88,39 +88,16 @@ mvn clean package
 ```
 1. Go to the bucket created earlier and upload index.html file into it
 2. Then, make the file public using ACL by selecting it under the Actions drop-down.
-3. Copy the Object URL under properties tab and then test it as in my case it is --> 
+3. Copy the Object URL under properties tab and then test it as in my case it is --> **[this link](https://dynamodb-testing-bucket.s3.amazonaws.com/index.html)**
 ```
 ### Start Testing
-   - Go to **/lambda** directory  
+   - Go to the above URL
+   - Enter any text and then clcik on CALL API Button
+   - Your desired response will come under Response from Lambda in index.html page
 
-```
-serverless invoke --function hello
-```
 
-### You should get Response as below
+### You should get Response as below if you have entered the Description as "John"
 
 ``` json
-{
-"statusCode": 200,
-"body": "Headless Chrome Initialized, Page title Home | Neami    National"
-}
+"Hello from Lambda!{Input text=John}"
 ```
-
-## Project Hierarchy
-```
-── /seleniumLayer/  # lambda layers
-  ├── /selenium  lambda layer of selenium lib
-  │  └──/python/      # python libs
-  │   └── /lib/    
-  │     └── /python3.6/*    
-  ├── /chromedriver/    # lambda layer of headless Chrome 
-  │ ├── /chromedriver   # chrome driver
-  │ └── /headless-chromium # headless chrome binary
-  └── /serverless.yaml     
-── /lambda/            # lambda function
-  ├── /handler.py      # source code of lambda function 
-  └── /serverless.yaml # serverless config\
-  
-  ```
-  
-- **For Reference go through [this link](https://github.com/yai333/Selenium-UI-testing-with-AWS-Lambda-Layers).** :thumbsup:
