@@ -88,7 +88,7 @@ mvn clean package
 ```
 1. Go to the bucket created earlier and upload index.html file into it
 2. Then, make the file public using ACL by selecting it under the Actions drop-down.
-3. Copy the Object URL under properties tab and then test it as in my case it is --> **[this link](https://dynamodb-testing-bucket.s3.amazonaws.com/index.html)**
+3. Copy the Object URL under properties tab and then test it.
 ```
 ### Start Testing
    - Go to the above URL
@@ -101,3 +101,5 @@ mvn clean package
 ``` json
 "Hello from Lambda!{Input text=John}"
 ```
+
+- **[URL Link](https://dynamodb-testing-bucket.s3.amazonaws.com/index.html)**
