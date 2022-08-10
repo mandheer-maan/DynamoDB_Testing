@@ -102,4 +102,4 @@ mvn clean package
 "Hello from Lambda!{Input text=John}"
 ```
 
-- **[URL Link](https://dynamodb-testing-bucket.s3.amazonaws.com/index.html)**
+- **[URL Link](https://dynamodb-testing-bucket.s3.amazonaws.com/index.html) for the web page**
